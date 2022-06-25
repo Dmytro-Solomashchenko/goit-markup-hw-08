@@ -1,0 +1,30 @@
+.page-footer {
+  color: $color-white;
+  background-color: $bg-color-tertiary;
+  padding: 60px 0px;
+
+  &--display {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer--wrapper {
+  width: 231px;
+}
+
+.page-footer__logo {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-white;
+  margin-bottom: 20px;
+  display: block;
+
+  &--accent {
+    color: $color-accent;
+  }
+}
