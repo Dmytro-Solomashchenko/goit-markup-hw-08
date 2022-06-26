@@ -59,7 +59,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: $color-primary;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,6 +70,9 @@
 
   &:focus {
     border-color: $color-accent;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
   }
 }
 

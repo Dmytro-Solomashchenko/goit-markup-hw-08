@@ -987,7 +987,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #212121;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1000,6 +1000,9 @@ img {
 }
 .field__comment:focus {
   border-color: #2196f3;
+}
+.field__comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .field__btn {
@@ -1061,9 +1064,10 @@ img {
 }
 
 .checkbox__icon {
-  margin-right: 7px;
+  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .checkbox__terms {
