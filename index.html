@@ -19,11 +19,37 @@
   </head>
   <body>
     <!--Header-->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container page-header--display">
         <a href="./index.html" class="page-header__logo" lang="en">
           <span class="page-header__logo--accent">Web</span>Studio
         </a>
+        <button
+          class="page-header__button is-open"
+          aria-expanded="false"
+          aria-controls="page-header__menu"
+          type="button"
+          data-menu-button
+        >
+          <svg
+            class="page-header__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="page-header__icon--menu"
+              href="./images/icons.svg#icon-icon_menu"
+            ></use>
+            <use
+              class="page-header__icon--close"
+              href="./images/icons.svg#icon-icon_close"
+            ></use>
+          </svg>
+        </button>
+        <div class="page-header__menu is-open" data-menu id="page-header__menu">
+          Скрытое меню
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
@@ -60,7 +86,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--Index-Section1-Hero-->
       <section class="hero">
@@ -388,7 +414,7 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container page-footer--display">
         <div class="page-footer--wrapper">
           <a href="./index.html" class="page-footer__logo" lang="en">
@@ -467,7 +493,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!--Modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -531,5 +557,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

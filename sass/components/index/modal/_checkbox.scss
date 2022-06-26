@@ -23,8 +23,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 1.72;
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.72;
+  }
 }
 
 .checkbox__icon {

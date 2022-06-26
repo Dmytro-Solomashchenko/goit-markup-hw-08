@@ -1,5 +1,6 @@
 .page-header {
   border-bottom: 1px solid $border-color-header;
+  position: relative;
 
   &--display {
     display: flex;
@@ -17,5 +18,39 @@
 
   &--accent {
     color: $color-accent;
+  }
+}
+
+.page-header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .page-header__icon--close {
+    display: none;
+  }
+
+  &.is-open .page-header__icon--close {
+    display: block;
+  }
+
+  &.is-open .page-header__icon--menu {
+    display: none;
+  }
+}
+
+.page-header__menu {
+  display: none;
+  background-color: turquoise;
+  padding: 48px 40px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  &.is-open {
+    display: block;
   }
 }
