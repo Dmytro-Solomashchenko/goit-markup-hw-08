@@ -885,7 +885,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 500px) {
   .modal {
     top: 0%;
     transform: translate(-50%, 0) scale(1);
