@@ -1,5 +1,6 @@
 .checkbox {
   display: flex;
+  justify-content: center;
 
   margin-bottom: 30px;
 }
@@ -20,7 +21,6 @@
 .checkbox__label {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.17;
