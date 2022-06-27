@@ -4,13 +4,13 @@ body {
   font-family: $font-primary;
   font-size: 14px;
   letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
   @media screen and (max-width: 767px) {
     &.menu-open {
       overflow: hidden;
     }
-  }
-  &.modal-open {
-    overflow: hidden;
   }
 }
 
