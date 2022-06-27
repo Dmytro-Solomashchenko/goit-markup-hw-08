@@ -1,36 +1,11 @@
-// .page-header {
-//   border-bottom: 1px solid $border-color-header;
-//   position: relative;
-
-//   &--display {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-
-// .page-header__logo {
-//   font-family: $font-secondary;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   color: $color-logoBlack;
-//   text-decoration: none;
-
-//   &--accent {
-//     color: $color-accent;
-//   }
-// }
-
 .page-header {
-  position: relative;
   border-bottom: 1px solid $border-color-header;
-  padding: 10px 0px;
+  position: relative;
+  padding: 10px 0;
+
   &--display {
     display: flex;
     align-items: center;
-  }
-  @media screen and (min-width: $tablet) {
-    padding: 0;
   }
 }
 
