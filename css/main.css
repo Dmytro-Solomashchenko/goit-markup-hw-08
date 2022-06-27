@@ -799,10 +799,14 @@ img {
 .page-footer--wrapper {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .page-footer--wrapper {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer--wrapper {
     flex-grow: 1;
-    margin-bottom: 0;
   }
 }
 
@@ -880,12 +884,12 @@ img {
 @media screen and (min-width: 768px) {
   .follow {
     margin-left: 165px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .follow {
     margin-left: 70px;
-    margin-bottom: 0;
   }
 }
 
@@ -936,9 +940,15 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 

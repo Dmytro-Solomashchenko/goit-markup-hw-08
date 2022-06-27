@@ -1,6 +1,10 @@
 .subscription {
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 

@@ -21,9 +21,11 @@
 
 .page-footer--wrapper {
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: $desktop) {
     flex-grow: 1;
-    margin-bottom: 0;
   }
 }
 
