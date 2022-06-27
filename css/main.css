@@ -56,6 +56,11 @@ img {
   position: relative;
   padding: 10px 0;
 }
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding: 0 0;
+  }
+}
 .page-header--display {
   display: flex;
   align-items: center;
@@ -135,6 +140,7 @@ img {
 @media screen and (min-width: 768px) {
   .page-header__menu {
     display: flex;
+    padding: 0 0;
   }
 }
 
@@ -176,8 +182,10 @@ img {
 }
 @media screen and (min-width: 768px) {
   .navigation__item {
-    margin-bottom: 0;
     padding: 32px 0;
+  }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 0;
   }
   .navigation__item:not(:last-child) {
     margin-right: 50px;
@@ -213,11 +221,29 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   list-style: none;
-  margin: 302px 0 64px 0;
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 84px;
+    justify-content: center;
+  }
 }
 
 .contacts__item {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    margin-bottom: 10px;
+  }
+  .contacts__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item:not(:first-child) {
@@ -226,11 +252,22 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:first-child) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 
 .contacts__item:not(:last-child) {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    font-size: 12px;
+  }
 }
 
 .contacts__link {
@@ -245,6 +282,11 @@ img {
 .contacts__link--tel {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .contacts__link--tel {
+    color: #757575;
+  }
+}
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
@@ -253,6 +295,11 @@ img {
   display: none;
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    display: inline-block;
+  }
 }
 
 .header-social {

@@ -3,6 +3,10 @@
   position: relative;
   padding: 10px 0;
 
+  @media screen and (min-width: $tablet) {
+    padding: 0 0;
+  }
+
   &--display {
     display: flex;
     align-items: center;
