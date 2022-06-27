@@ -1,7 +1,7 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -14,7 +14,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
@@ -23,28 +23,20 @@
 
 .clients__list {
   list-style: none;
-  justify-content: center;
-  align-items: center;
-  margin-left: -30px;
-  margin-bottom: -30px;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
-  display: inline-block;
   height: 92px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 
-  flex-basis: calc(100% / 2 - 30px);
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 6 - 30px);
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
