@@ -1,5 +1,12 @@
 .follow {
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .follow__title {
@@ -8,6 +15,9 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .follow__list {
