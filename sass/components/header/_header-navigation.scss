@@ -20,11 +20,14 @@
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 28px;
+
     line-height: 1.14;
   }
 }
-
 .navigation__item {
   position: relative;
   &:not(:last-child) {

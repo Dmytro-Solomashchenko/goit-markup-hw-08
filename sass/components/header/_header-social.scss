@@ -8,10 +8,17 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+  @media screen and (max-width: 479px) {
+    font-size: 13px;
+    line-height: 1.14;
+  }
 }
 
 .header-social__item {
   padding: 0 10px;
+  @media screen and (max-width: 479px) {
+    padding: 0 5px;
+  }
 }
 
 .header-social__item:first-child {
