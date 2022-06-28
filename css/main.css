@@ -182,7 +182,6 @@ img {
 @media screen and (max-width: 479px) {
   .navigation__list {
     font-size: 28px;
-    line-height: 1.14;
   }
 }
 
@@ -301,7 +300,6 @@ img {
 @media screen and (max-width: 479px) {
   .contacts__item:not(:first-child) {
     font-size: 24px;
-    line-height: 1.14;
   }
 }
 
@@ -324,7 +322,6 @@ img {
 @media screen and (max-width: 479px) {
   .contacts__item:not(:last-child) {
     font-size: 18px;
-    line-height: 1.14;
   }
 }
 
@@ -381,7 +378,6 @@ img {
 @media screen and (max-width: 479px) {
   .header-social {
     font-size: 13px;
-    line-height: 1.14;
   }
 }
 
@@ -861,6 +857,7 @@ img {
 }
 .projects__link:hover .projects__overlay, .projects__link:focus .projects__overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .projects__wrapper-first {
@@ -878,8 +875,9 @@ img {
   font-size: 18px;
   line-height: 1.56;
   padding: 77px 24px;
+  opacity: 0;
   transform: translateY(100%);
-  transition-property: transform;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -891,6 +889,11 @@ img {
 @media screen and (min-width: 1200px) {
   .projects__overlay {
     padding: 63px 24px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .projects__overlay {
+    font-size: 10px;
   }
 }
 
@@ -1302,7 +1305,6 @@ img {
 @media screen and (max-width: 479px) {
   .modal__title {
     font-size: 12px;
-    line-height: 1.5;
   }
 }
 
