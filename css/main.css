@@ -116,7 +116,8 @@ img {
 }
 @media screen and (max-width: 767px) {
   .page-header__button.is-open + .page-header__menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
@@ -137,6 +138,8 @@ img {
   padding: 48px 40px;
   z-index: 999;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .page-header__menu {
@@ -234,12 +237,10 @@ img {
 .contacts {
   display: flex;
   flex-direction: column-reverse;
-  margin-left: auto;
+  margin-left: 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   list-style: none;
-  margin-top: 302px;
-  margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -916,6 +917,7 @@ img {
 @media screen and (max-width: 479px) {
   .projects__overlay {
     font-size: 10px;
+    padding: 55px 24px 55px 24px;
   }
 }
 
@@ -1248,6 +1250,7 @@ img {
   transition: visibility, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 99999;
   overflow-y: scroll;
 }
 
