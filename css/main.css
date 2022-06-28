@@ -136,6 +136,7 @@ img {
   background-color: #ffffff;
   padding: 48px 40px;
   z-index: 999;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .page-header__menu {
@@ -252,7 +253,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    margin-left: 305px;
+    margin-left: auto;
     align-items: center;
   }
 }
